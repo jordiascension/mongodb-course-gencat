@@ -19,3 +19,6 @@ newman run "MongoDB Data API.postman_collection.json" -e "Data API.postman_envir
 
 ### Execute CrudStudentsExercice.js to Atlas MongoDB Database
 mongosh "mongodb+srv://cluster0.dsb8fht.mongodb.net/school" --apiVersion 1 --username jordi CrudStudentsExercise.js
+
+-You must install firs pymongo via pip
+python -m pip install pymongo
