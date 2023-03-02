@@ -14,4 +14,8 @@ newman run NttData-Student-Gencat.postman_collection.json -e NttData-Student-PRO
 ### Execute Newman's Report
 npm install -g newman-reporter-htmlextra
 newman run NttData-Student-Gencat.postman_collection.json -e NttData-Student-PRO.postman_environment.json -r htmlextra
+newman run "MongoDB Data API.postman_collection.json" -e "Data API.postman_environment.json" -r htmlextra
 - in folder newman we will get an html report file
+
+### Execute CrudStudentsExercice.js to Atlas MongoDB Database
+mongosh "mongodb+srv://cluster0.dsb8fht.mongodb.net/school" --apiVersion 1 --username jordi CrudStudentsExercise.js
