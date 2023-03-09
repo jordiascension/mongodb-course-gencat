@@ -22,3 +22,7 @@ mongosh "mongodb+srv://cluster0.dsb8fht.mongodb.net/school" --apiVersion 1 --use
 
 -You must install firs pymongo via pip
 python -m pip install pymongo
+
+### Mongosh Executes an external javascript file
+mongosh "127.0.0.1/school" "StudentsValidation.js"
+mongosh "127.0.0.1/school" "StudentsInsert.js"
